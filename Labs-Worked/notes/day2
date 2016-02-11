@@ -11,6 +11,7 @@ encapsulate opening and reading and writing files using `with` statement
 with open('input.file', 'r') as infile, open('output.file', 'w') as outfile
     for line in infile:  # variables infile and outfile are now available
         do some processing
+
 ```
 
 if either file errors on the `with` line, it will not drop into the with statement
@@ -26,6 +27,7 @@ negative slices
 ```
 x = 'himalayas'
 x[-3] == 'y'  # True
+
 ```
 
 
@@ -38,6 +40,7 @@ def testfunc2(a):   # returns one item
 def testfunc1(x):   # returns None  <== always returns something, even if it is None
     print x
     print x
+
 ```
 
 
@@ -46,6 +49,7 @@ def testfunc1(x):   # returns None  <== always returns something, even if it is 
 ```
 variable1 = urllib.urlopen('urlAddress')
 variable1.read() # reads the whole web page!
+
 ```
 
 
@@ -62,6 +66,7 @@ Tuples are immutable
 x = (1,2,3)  <== use () to make tuples
 z = (12,)  <== a single item tuple
 y,m = (4,5)  <== a == 4 && m == 5  # True
+
 ```
 
 acts like a list, access vals through brackets and can call a lot of the same funcs as lists
@@ -77,6 +82,7 @@ x = [1,2,3]
 y = [4,5,6]
 z = zip(x,y)
 z == [(1,4),(2,5), (3,6)]  # True
+
 ```
 
 
@@ -85,6 +91,7 @@ z == [(1,4),(2,5), (3,6)]  # True
 ```
 def func():
     stuff
+
 ```
 
 # globals and locals
@@ -95,6 +102,7 @@ can call `globals()` or `locals()` and it will return all the global/local varia
 def func():
     global x  # if x was set in the global scope, then this will point the
     x = 123   # new value to the global, else it will create a global variable x
+
 ```
 
 # Variable Parameter COllectors
@@ -107,6 +115,7 @@ def k(x=None, y=None):
 
 
 k(y=456)  <== returns None (for x), 456
+
 ```
 
 positional arguments have to be given in order
@@ -124,5 +133,6 @@ def func(a,b,c,d):
 variable1 = [1,2,3,4]
 
 func(*variable1)  # maps onto the 4 parameters of the function
+
 ```
 

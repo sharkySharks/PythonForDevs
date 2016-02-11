@@ -51,6 +51,7 @@ elif x == 2
     print "that"
 elif
     print "what?"
+
 ```
 
 
@@ -65,6 +66,7 @@ while/else statments
 ```
 for i in u:
     print i
+
 ```
 
 `i` is the the VALUE, not the index
@@ -72,6 +74,7 @@ for i in u:
 ```
 for (idx, val) in enumerate(u):
     print "u[{}] = {}".format(idx, val)
+
 ```
 
 
@@ -97,6 +100,7 @@ x[-1] is 4
 
 list('abc') is ['a', 'b', 'c']
 list(['abc']) is ['abc']
+
 ```
 
 range(start, stop, step)
@@ -111,11 +115,13 @@ k[0:2]
 
 k[::-1] # reverses
 [9,7,5,3,1]
+
 ```
 
 adding lists concatenates them
 
 unloading a list
+
 ```
 x = [[1,2,3], [4,5,6], [7,8,9]]
 a,b,c,d = x <== a=1, b=2, c=3, d=4
@@ -127,4 +133,5 @@ prints:
 1,2,3
 4,5,6
 7,8,9
+
 ```

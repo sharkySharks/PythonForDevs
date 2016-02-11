@@ -36,8 +36,8 @@ class MinBalAcct(BankAccount):
     def __str__(self):
         return ("The balance for this account is ${:,.2f}\n" +
                "The minimum balance is ${:,.0f}").format(self.balance,
-                                                        self.minimum_bal)    
-        
+                                                        self.minimum_bal)
+
 a = BankAccount()  # Create an instance of Bankaccount
 b = BankAccount()  # Create another instance
 print 'Number of accounts -', BankAccount.acct_cntr  # print class variable
@@ -53,7 +53,7 @@ except ValueError, msg:
     print "Account not established -", msg
 print c
 print d  # Verifies the instantiation did not occur.
-    
+
 
 
 
