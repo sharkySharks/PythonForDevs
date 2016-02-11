@@ -60,7 +60,7 @@ while/else statments
 
 <see d1While.jpg example>
 
-# for Looping
+## for Looping
 
 ```
 for i in u:

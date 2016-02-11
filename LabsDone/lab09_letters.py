@@ -9,7 +9,7 @@ are e's.
 tot_letters = 0
 tot_e = 0
 
-fin = open('/home/student/pydata/alice_in_wonderland.dat')  # Linux
+fin = open('../../LabsData/alice_in_wonderland.dat')  # Linux
 # fin = open('c:/pydata/alice_in_wonderland.dat')  # Windows
 bookin = fin.read()
 for i in bookin:
@@ -22,4 +22,4 @@ print 'Total e\'s: {:,d}'.format(tot_e)
 print '{:,.1%} percent of all the letters are e\'s'.format(
         float(tot_e)/tot_letters)
 
-    
+
